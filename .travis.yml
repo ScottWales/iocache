@@ -4,7 +4,7 @@ python:
     - 3.5
 
 install:
-    - pip install codecov coverage
+    - pip install --upgrade pytest codecov coverage
     - pip install .
 
 script:
