@@ -24,7 +24,7 @@ import sys
 import os
 from subprocess import Popen, PIPE
 
-from checksum import checksum
+from scache.checksum import checksum
 
 trace_re = re.compile('^(\[.*\] )?open\("(.*)", (.*)\) += (.*)$')
 
