@@ -36,3 +36,5 @@ def test_parse_trace(tmpdir, cache):
     
     cache.parse_trace('open("%s", O_RDONLY) = 1'%a_path)
     cache.parse_trace('open("%s", O_WRONLY) = 2'%b_path)
+    cache.parse_trace('open("c",  O_WRONLY) = -1 ERROR')
+    cache.parse_trace('open("/usr/ignore",  O_RDONLY) = 1')
